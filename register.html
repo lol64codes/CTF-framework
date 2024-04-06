@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head></head>
-    <body>test 1</body>
+    <head>
+        <style>
+            iframe {
+                border: 0;
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="/navbar"></iframe>
+        <hr>
+        <p>Register New Account (one account per team)</p>
+        <form action="/NewAccountRequest" method="POST">
+            <input type="text" placeholder="username" name="username">
+            <input type="password" placeholder="password" name="password">
+            <input type="submit">
+        </form>
+    </body>
 </html>
