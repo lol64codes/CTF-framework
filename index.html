@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/static/favicon.png">
+        <title>CTF Framework</title>
         <style>
             iframe {
                 border: 0;
                 height: 80px;
+                width: 800px;
             }
         </style>
     </head>
     <body>
-        <iframe src="/navbar"></iframe>
+        <iframe src="/static/navbar.html"></iframe>
         <hr>
+        <h1>Main Page</h1>
         <p>Register New Account (one account per team)</p>
+        <p>Team name can only contain letters, numbers, and spaces</p>
+        <p>Team name must be between 1 and 30 characters long</p>
+        <p>Password must be between 8 and 40 characters long</p>
         <form action="/NewAccountRequest" method="POST">
-            <input type="text" placeholder="username" name="Team Name">
-            <input type="password" placeholder="password" name="Password">
+            <input type="text" placeholder="Team Name" name="username">
+            <input type="password" placeholder="Password" name="password">
             <input type="submit">
         </form>
     </body>
