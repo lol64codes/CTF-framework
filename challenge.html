@@ -11,6 +11,9 @@
                 height: 80px;
                 width: 800px;
             }
+            .challenge {
+                height: 800px;
+            }
         </style>
     </head>
     <body>
@@ -19,11 +22,11 @@
         <p>CTF challenges</p>
         <p>Note: login is not persistent</p>
         <form target="_blank" action="/FlagSubmitRequest" method="POST">
-            <input type="text" placeholder="Username" name="team name">
+            <input type="text" placeholder="Team name" name="username">
             <input type="password" placeholder="Password" name="password">
             <input type="text" placeholder="Flag" name="flag">
             <input type="submit">
         </form>
-        <iframe src="/challenge_frame"></iframe>
+        <iframe class="challenge" src="/challenge_frame"></iframe>
     </body>
 </html>
