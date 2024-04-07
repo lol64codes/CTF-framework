@@ -1,0 +1,2 @@
+Example Challenge 1|10|ctf{example_flag_1}
+Example Challenge 2|20|ctf{example_flag_2}
