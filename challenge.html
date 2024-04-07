@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/static/favicon.png">
+        <title>CTF Framework</title>
+        <style>
+            iframe {
+                border: 0;
+                height: 80px;
+                width: 800px;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="/static/navbar.html"></iframe>
+        <hr>
+        <p>CTF challenges</p>
+        <p>Note: login is not persistent</p>
+        <form target="_blank" action="/FlagSubmitRequest" method="POST">
+            <input type="text" placeholder="Username" name="team name">
+            <input type="password" placeholder="Password" name="password">
+            <input type="text" placeholder="Flag" name="flag">
+            <input type="submit">
+        </form>
+        <iframe src="/challenge_frame"></iframe>
+    </body>
+</html>
